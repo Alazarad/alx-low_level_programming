@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
  * main-entry point
  *
@@ -12,13 +13,6 @@ int main(void)
 	{
 		putchar(alphabet);
 		alphabet++;
-	}
-	char upper_case = 'A';
-
-	while (upper_case <= 'Z')
-	{
-		putchar(upper_case);
-		upper_case++;
 	}
 	putchar('\n');
 	return (0);
