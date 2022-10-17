@@ -7,15 +7,18 @@
  */
 int main(void)
 {
-	char alphabet = 'a';
+	char alphabet;
+	char upper_case;
+
+	upper_case = 'A';
+	alphabet = 'a';
+
 
 	while (alphabet <= 'z')
 	{
 		putchar(alphabet);
 		alphabet++;
 	}
-	char upper_case = 'A';
-
 	while (upper_case <= 'Z')
 	{
 		putchar(upper_case);
