@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main-entry point
+ * print_alphabet-entry point
  *
  * Return: 0
  */
@@ -11,5 +11,4 @@ void print_alphabet(void)
 	for (letter = 'a'; letter <= 'z'; letter++)
 		_putchar(letter);
 	_putchar('\n');
-	return ;
 }
