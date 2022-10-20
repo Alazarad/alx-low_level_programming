@@ -1,7 +1,10 @@
 #include<stdio.h>
 int main()
 {
-	putchar((12 / 10)+'0');
+	int n; 
+	scanf("%d", &n);
+		for (n; n<=10; n--)
+			printf("%d", n);	
 	putchar('\n');
 
 return(0);
