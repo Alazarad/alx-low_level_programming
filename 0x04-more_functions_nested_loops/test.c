@@ -2,12 +2,20 @@
 
 int main()
 {
-	int a,b,c;
+   int a;
+   int b;
+   int n= 4;
 
-	for (a = 0; a<= 9; a++)
-		putchar(47 +'0');
-	
+   for (a=0; a <= n; a++)
+   {
+        for (b = 0; b < a; b++)
+		putchar(' ');
+		
+	putchar(44 + '0');
 	putchar('\n');
-
+	
+   }
 	return (0);
 }
+
+
