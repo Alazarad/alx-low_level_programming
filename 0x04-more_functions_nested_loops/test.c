@@ -4,14 +4,17 @@ int main()
 {
    int a;
    int b;
-   int n= 4;
+   int size= 4;
 
-   for (a=0; a <= n; a++)
+   if (size <=0 )
+	   putchar('\n');
+
+   for (a=0; a < size; a++)
    {
-        for (b = 0; b < a; b++)
-		putchar(' ');
-		
-	putchar(44 + '0');
+        for (b = 0; b < size; b++)
+	{
+		putchar('#');
+   	}
 	putchar('\n');
 	
    }
