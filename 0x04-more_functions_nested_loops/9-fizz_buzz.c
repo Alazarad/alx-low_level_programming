@@ -19,6 +19,6 @@ int main(void)
 		else
 			printf("%d ", a);
 	}
-	printf("100\n");
+	printf("Buzz\n");
 	return (0);
 }
