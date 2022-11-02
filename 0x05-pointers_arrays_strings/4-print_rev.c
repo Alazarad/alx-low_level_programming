@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * print_rev - check the code
@@ -7,11 +7,11 @@
  */
 void print_rev(char *s)
 {
-	int a, b, c;
+	int a, b;
 
 	for (b = 0; *(s + b) != 0; b++)
-		c = b;
+		b = b;
 	for (a = b; a >= 0; a--)
-		putchar(s[a]);
-	putchar('\n');
+		_putchar(s[a]);
+	_putchar('\n');
 }
