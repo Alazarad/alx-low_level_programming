@@ -1,6 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 
-void print_array(int *a, int n);
+/**
+ * main - check the code for
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
     int array[5];
@@ -13,13 +17,3 @@ int main(void)
     print_array(array, 5);
     return (0);
 }
-void print_array(int *a, int n)
-{
-	int b;
-
-	for (b = 0; b < n - 1; b++)
-	{
-		printf("%d, ", a[b]);
-	}
-	printf("%d\n", a[n-1]);
-}	
