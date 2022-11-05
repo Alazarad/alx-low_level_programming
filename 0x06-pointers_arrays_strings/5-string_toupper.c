@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * string_toupper- change a string to all upper characters
- * 
+ * @string: string to be converted
  * Return: upper string
  */
 char *string_toupper(char *string)
