@@ -4,6 +4,7 @@
  * @dest: destination string
  * @src: soutce string
  * @n: number of bytes
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -16,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	for (b = 0; src[b] != '\0'; b++)
 		b = b;
-	for (c = 0; src[c] !='\0' && c < n; c++)
+	for (c = 0; src[c] != '\0' && c < n; c++)
 	{
 		temp[a] = src[c];
 		a++;
