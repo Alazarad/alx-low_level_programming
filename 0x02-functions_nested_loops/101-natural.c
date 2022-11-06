@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main- add multiples of 3 and 5 till 1024
+ *
+ * Return: void
+ */
 int main(void)
 {
 	int a, b = 0;
