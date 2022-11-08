@@ -11,15 +11,19 @@ char *leet(char *string)
 	int upper[] = {65, 69, 79, 84, 76};
 	int substitute[] = {52, 51, 48, 55, 49};
 
-	for (a = 0; string[a] != '\0'; a++)
+	a = 0;
+	while (string[a] != '\0')
 	{
-		for (b = 0; b < 4; b++)
+		for (b = 0; b < 5; b++)
 		{
-			if (string[a] == lower[b])
+			if (string[a] == lower[b] || string[a] == upper[b])
+			{
 				string[a] = substitute[b];
-			else if (string[a] == upper[b])
-				string[a] = substitute[b];
+				break;
+			}
+
 		}
+		a++;
 	}
 	return (string);
 }
