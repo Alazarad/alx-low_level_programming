@@ -7,9 +7,10 @@
 
 void print_number(int n)
 {
-	unsigned int a, b, c = n;
+	unsigned int a, b, c;
 	double d = 1;
 
+	c = n;
 	if (n == 0)
 		_putchar('0');
 	else
