@@ -24,5 +24,5 @@ int sqr(int n, int a)
 	else if ((a * a) > n)
 		return (-1);
 	else
-		return(a);
+		return (a);
 }
