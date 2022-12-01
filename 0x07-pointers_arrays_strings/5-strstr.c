@@ -16,23 +16,23 @@ char *_strstr(char *haystack, char *needle)
 		return (haystack);
 	for (count1 = 0; *(haystack + count1) != '\0'; count1++)
 	{
-			if (*(haystack + count1) == *(needle + count2))
+		if (*(haystack + count1) == *(needle + count2))
+		{
+			a = count1;
+			b = count2;
+			while (*(needle + b) != '\0')
 			{
-				a = count1;
-				b = count2;
-				while (*(needle + b) != '\0')
+				if (*(haystack + a) == *(needle + b))
 				{
-					if (*(haystack + a) == *(needle + b))
-					{
-						a++;
-						b++;
-					}
-					else
-						break;
+					a++;
+					b++;
 				}
-					if (*(needle + b) == '\0')
-						return (haystack + count1);
+				else
+					break;
 			}
+			if (*(needle + b) == '\0')
+			return (haystack + count1);
+		}
 	}
 	return (0);
 }
