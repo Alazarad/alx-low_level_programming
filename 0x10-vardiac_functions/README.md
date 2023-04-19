@@ -1,1 +1,0 @@
-vardiac functions
